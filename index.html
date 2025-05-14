@@ -18,13 +18,26 @@
 
   <body>
     <div class="wrapper">
+      <!-- Banner Image -->
+      <div class="banner" style="text-align: center;">
+        <img
+          src="image.png"
+          alt="Codtech Banner"
+          style="width: 100%; max-width: 800px; height: auto; border-radius: 10px; margin: 0 auto;"
+        />
+      </div>
+
       <div class="title">
-        <h1><a href="https://amirtyuniversity.netlify.app/" target="_blank">Amity University</a></h1>
+        <h1><a href="" target="_blank">Brain Code Ai</a></h1>
         <div class="subtitle">
           <i class="fas fa-user-graduate"></i>
           <h2>Student Registration Form</h2>
         </div>
+        <h2>Internship</h2>
       </div>
+
+      <!-- ... rest of your form code remains unchanged ... -->
+
 
       <form
         method="POST"
@@ -204,10 +217,11 @@
             <div class="inputfield">
               <label for="course">Select Course</label>
               <select id="course" name="course" required>
-                <option value="BTech">BTech</option>
-                <option value="MBA">MBA</option>
-                <option value="MSc">MSc</option>
-                <option value="BBA">BBA</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="Front End">Front End</option>
+                <option value="Back End">Back End</option>
+                <option value="Full Stack">Full Stack</option>
                 <!-- Add more courses here -->
               </select>
             </div>
@@ -260,17 +274,20 @@
         let price = 0;
 
         switch (course) {
-          case "BTech":
-            price = 50000;
+          case "Java":
+            price = 499;
             break;
-          case "MBA":
-            price = 80000;
+          case "Python":
+            price = 499;
             break;
-          case "MSc":
-            price = 60000;
+          case "Front End":
+            price = 399;
             break;
-          case "BBA":
-            price = 40000;
+          case "Back End":
+            price = 399;
+            break;
+             case "Full Stack":
+            price = 599;
             break;
           // Add more courses and prices as needed
         }
