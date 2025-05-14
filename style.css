@@ -4,16 +4,16 @@
 
 :root {
   /* Colors */
-  --primary-color: #4361ee;
-  --primary-light: #4895ef;
-  --primary-dark: #3f37c9;
+  --primary-color: #2491d9;
+  --primary-light: #18b74b;
+  --primary-dark: #cb7b25;
   --secondary-color: #f72585;
-  --text-dark: #333333;
+  --text-dark: #1a1201;
   --text-light: #666666;
-  --background: #f8f9fa;
-  --white: #ffffff;
-  --success: #4caf50;
-  --error: #f44336;
+  --background: #83dd71;
+  --white: #f9fdfd;
+  --success: #28ba2c;
+  --error: #e32214;
   --error-light: rgba(244, 67, 54, 0.05);
   
   /* Spacing */
@@ -29,6 +29,72 @@
   --transition: all 0.3s ease;
   --input-padding: 12px 15px;
   --input-height: 45px;
+}
+.course-carousel {
+  display: flex;
+  overflow-x: auto;
+  padding: 10px;
+  gap: 15px;
+  margin: 20px;
+  scroll-snap-type: x mandatory;
+}
+
+.course-card {
+  flex: 0 0 auto;
+  width: 250px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+  scroll-snap-align: start;
+  text-align: center;
+}
+
+.course-card img {
+  width: 100%;
+  border-radius: 8px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.course-card h3 {
+  margin: 10px 0 5px;
+  font-size: 1.1rem;
+}
+
+.course-card p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.course-card .rating {
+  font-size: 0.85rem;
+  color: #444;
+  margin: 5px 0;
+}
+
+.course-card .price {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.course-card del {
+  color: #aaa;
+  margin-right: 5px;
+}
+
+.course-card button {
+  background: #007bff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+
+.course-card button:hover {
+  background: #0056b3;
 }
 
 * {
