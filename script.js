@@ -123,6 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
       checkPasswordMatch();
     }
   });
+  
 
   // Password and confirm password match - fixed version
   function checkPasswordMatch() {
